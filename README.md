@@ -24,7 +24,7 @@ This resource handles the showing/removing of entities for you, you only need to
 
 First download the JS wrapper for the C# entity sync from [GitHub](https://github.com/Kudze/altv-csharp-entity-sync-to-js-wrapper).<br>
 Then you need to build it using `dotnet publish -c Release` and create a new resource with the type `csharp`.<br>
-You should name this resource `entitysync-wrapper`. Then add it to your `server.cfg` as a resource.
+You should name this resource `entitysync-wrapper`
 
 After that simply add the name of this resource to your `server.cfg` resource section.
 
