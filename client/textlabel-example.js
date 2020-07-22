@@ -101,5 +101,18 @@ function drawText3d(
     native.endTextCommandDisplayText(0, 0);
     native.clearDrawOrigin();
 }
+/**
+ * Converts a hex color to an rgb color
+ * @author Stuyk
+ * @param {Number} hex Hex color
+ * @returns {Array<number>} Array containg R, G, B values
+ */
+function hexToRgb(hex) {
+    var bigint = parseInt(hex, 16);
+    var r = (bigint >> 16) & 255;
+    var g = (bigint >> 8) & 255;
+    var b = bigint & 255;
+    return [r, g, b];
+}
 
 Entity.addType(TEXTLABEL_ENTITY_TYPE, Textlabel);
