@@ -31,7 +31,7 @@ export class Entity {
      */
     destroy() {
         EntitySync.removeEntity(this._entity, this._type);
-        alt.log(`Removed entity ${this._entity} with type ${type}`);
+        alt.log(`Removed entity ${this._entity} with type ${this._type}`);
     }
     /**
      * Gets entity data by key
