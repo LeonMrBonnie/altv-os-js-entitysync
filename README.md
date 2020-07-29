@@ -26,13 +26,14 @@ This resource handles the showing/removing of entities for you, you only need to
 
 First download the JS wrapper for the C# entity sync from [GitHub](https://github.com/Kudze/altv-csharp-entity-sync-to-js-wrapper).<br>
 Then you need to build it using `dotnet publish -c Release` and create a new resource with the type `csharp`.<br>
-You should name this resource `entitysync-wrapper`
+You should name this resource `entitysync-wrapper`.
 
 After that simply add the name of this resource to your `server.cfg` resource section.
 
 `altv-os-js-entitysync`
 
-And also add the name of this resource to the `deps` array of your `resource.cfg` from your main gamemode.
+And also add the name of this resource to the `deps` array of your `resource.cfg` from your main gamemode.<br>
+Also add the `entitysync-wrapper` to the `deps` array of your resource.
 
 Then simply clone this repository into your main server resources folder.
 
@@ -56,11 +57,8 @@ Make sure that every new Entity class has its own unique `type` id. Else it will
 You can find an example in `server/textlabel-example.js` and `client/textlabel-example.js`
 
 ! IMPORTANT !<br>
-The imports in the examples are relative imports, in your own files you have to use this syntax to import the resource directly.
-```js
-import * as EntitySync from "altv-os-js-entitysync";
-```
-If this doesn't work make sure that the resource is listed in the `deps` of your resource.
+All your files related to the entity sync have to be in the same resource, because you can't export and import a class.<br>
+So you have to put all the files from this resource into your own resource.
 
 # Credits
 
