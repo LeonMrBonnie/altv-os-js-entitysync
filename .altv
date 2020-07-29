@@ -1,0 +1,6 @@
+[
+    {
+        "type": "postinstall",
+        "file": "postinstall.js"
+    }
+]
