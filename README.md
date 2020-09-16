@@ -2,7 +2,7 @@
 
 Created by LeonMrBonnie
 
-[❤️ Support me by becoming a Patron](https://www.patreon.com/leonmrbonnie/)
+[❤️ Support me by becoming a Patron](https://www.patreon.com/leonmrbonnie/)<br>
 ⭐ This repository if you found it useful!
 
 [![Generic badge](https://img.shields.io/badge/.altv_Installer%3F-Yes!-4E753E.svg)](https://shields.io/)
