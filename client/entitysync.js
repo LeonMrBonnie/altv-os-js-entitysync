@@ -159,3 +159,11 @@ alt.onServer("entitySync:netOwner", (id, type, owner) => {
     if (!entity) return;
     // TODO: Add net owner features
 });
+
+alt.on("disconnect", () => {
+    for(let ent in Entity._entities)
+    {
+        let entity = Entity._entities[ent];
+        if(entity) entity.destroy();
+    }
+});
