@@ -161,8 +161,7 @@ alt.onServer("entitySync:netOwner", (id, type, owner) => {
 });
 
 alt.on("disconnect", () => {
-    for(let ent in Entity._entities)
-    {
+    for(let ent in Entity._entities) {
         let entity = Entity._entities[ent];
         if(entity) entity.destroy();
     }
