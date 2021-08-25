@@ -98,7 +98,7 @@ function drawText3d(
 
     if (useDropShadow) native.setTextDropShadow();
 
-    native.endTextCommandDisplayText(0, 0);
+    native.endTextCommandDisplayText(0, 0, 0);
     native.clearDrawOrigin();
 }
 /**
